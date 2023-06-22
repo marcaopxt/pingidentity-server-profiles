@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ldap:ldap-sources xmlns:ldap="http://pingidentity.com/2004/09/ldap-ds">
+    <ldap:ldap-source id="LDAP-AE9AEB44809565007F80A96FC8618F2C6148E86A" maskAttributeValues="false" ldapType="ActiveDirectory" ldapTypeDesc="Active Directory" testOnBorrow="false" testOnReturn="false" createIfNecessary="true" minIdle="10" maxActive="100" maxWait="-1" timeBetweenEvictionRunsMillis="60000" readTimeoutMillis="3000" connTimeoutMillis="3000" verifyHost="true" dnsTtlMillis="60000" ldapDnsSrvPrefix="_ldap._tcp" ldapsDnsSrvPrefix="_ldaps._tcp">
+        <ldap:host>10.53.22.76</ldap:host>
+        <ldap:principal>CN=serv.pingfed.hnet,CN=Users,DC=hnet,DC=local</ldap:principal>
+        <ldap:use-ssl>false</ldap:use-ssl>
+        <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
+        <ldap:ad-referral>false</ldap:ad-referral>
+        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoidnhOM3VQM1hiaCIsInZlcnNpb24iOiIxMS4yLjQuMCJ9..cwES8425VL9Is-QSKxPZIg.QOtACtVkVmduPC_p7eNoAg.od0i7ZcYZQAyIT2sPU2KYA</ldap:credentials>
+        <ldap:authenticationMeth>simple</ldap:authenticationMeth>
+        <ldap:description>HNETDC01 - 10.53.22.76</ldap:description>
+        <ldap:name>HNETDC01 - 10.53.22.76</ldap:name>
+        <ldap:binaryAttributes/>
+        <ldap:ldapHostTagList>
+            <ldap:tagEntry host="10.53.22.76" tags="HNETDC01"/>
+        </ldap:ldapHostTagList>
+    </ldap:ldap-source>
+    <ldap:ldap-source id="LDAP-FCB654342DE49581B333D8D8109570E3718198CD" maskAttributeValues="false" ldapType="ActiveDirectory" ldapTypeDesc="Active Directory" testOnBorrow="false" testOnReturn="false" createIfNecessary="true" minIdle="10" maxActive="100" maxWait="-1" timeBetweenEvictionRunsMillis="60000" readTimeoutMillis="3000" connTimeoutMillis="3000" verifyHost="true" dnsTtlMillis="60000" ldapDnsSrvPrefix="_ldap._tcp" ldapsDnsSrvPrefix="_ldaps._tcp">
+        <ldap:host>10.53.22.74</ldap:host>
+        <ldap:principal>CN=serv.pingfed.hclaro,CN=Users,DC=hclaro,DC=local</ldap:principal>
+        <ldap:use-ssl>false</ldap:use-ssl>
+        <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
+        <ldap:ad-referral>false</ldap:ad-referral>
+        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoidnhOM3VQM1hiaCIsInZlcnNpb24iOiIxMS4yLjQuMCJ9..dt6ai4qX6KqlhY1aSUbd6g.GgbSuncUqMmn9xtdSSZ0AQ.STfrEaQogPq7nzMkoBGjlw</ldap:credentials>
+        <ldap:authenticationMeth>simple</ldap:authenticationMeth>
+        <ldap:description>HCLARODC01 - 10.53.22.74</ldap:description>
+        <ldap:name>HCLARODC01 - 10.53.22.74</ldap:name>
+        <ldap:binaryAttributes/>
+        <ldap:ldapHostTagList>
+            <ldap:tagEntry host="10.53.22.74" tags="Hclaro (HCLARODC01)"/>
+        </ldap:ldapHostTagList>
+    </ldap:ldap-source>
+    <ldap:ldap-source id="LDAP-0DB630962C05D3FADCC83D590EA320A431BB4D85" maskAttributeValues="false" ldapType="ActiveDirectory" ldapTypeDesc="Active Directory" testOnBorrow="false" testOnReturn="false" createIfNecessary="true" minIdle="10" maxActive="100" maxWait="-1" timeBetweenEvictionRunsMillis="60000" readTimeoutMillis="3000" connTimeoutMillis="3000" verifyHost="true" dnsTtlMillis="60000" ldapDnsSrvPrefix="_ldap._tcp" ldapsDnsSrvPrefix="_ldaps._tcp">
+        <ldap:host>10.53.22.70</ldap:host>
+        <ldap:principal>serv.pingfed.hcorp</ldap:principal>
+        <ldap:use-ssl>false</ldap:use-ssl>
+        <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
+        <ldap:ad-referral>false</ldap:ad-referral>
+        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoidnhOM3VQM1hiaCIsInZlcnNpb24iOiIxMS4yLjQuMCJ9..t3hRbUWDXQNb-9qdp0NZqA.I48smcP9oPuZNJn7X2hW2A.Ouvw0LPdEDynSL9ybg1KwA</ldap:credentials>
+        <ldap:authenticationMeth>simple</ldap:authenticationMeth>
+        <ldap:description>HCORPDC01 - 10.53.22.70</ldap:description>
+        <ldap:name>HCORPDC01 - 10.53.22.70</ldap:name>
+        <ldap:binaryAttributes/>
+        <ldap:ldapHostTagList>
+            <ldap:tagEntry host="10.53.22.70" tags="HCORPDC01"/>
+        </ldap:ldapHostTagList>
+    </ldap:ldap-source>
+    <ldap:ldap-source id="LDAP-298E28AD8E6159B0AF31AFB9F362270A7CB81C32" maskAttributeValues="false" ldapType="ActiveDirectory" ldapTypeDesc="Active Directory" testOnBorrow="false" testOnReturn="false" createIfNecessary="true" minIdle="10" maxActive="100" maxWait="-1" timeBetweenEvictionRunsMillis="60000" readTimeoutMillis="3000" connTimeoutMillis="3000" verifyHost="true" dnsTtlMillis="60000" ldapDnsSrvPrefix="_ldap._tcp" ldapsDnsSrvPrefix="_ldaps._tcp">
+        <ldap:host>10.53.22.72</ldap:host>
+        <ldap:principal>CN=serv.pingfed.hebt,CN=Users,DC=hebt,DC=local</ldap:principal>
+        <ldap:use-ssl>false</ldap:use-ssl>
+        <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
+        <ldap:ad-referral>false</ldap:ad-referral>
+        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoidnhOM3VQM1hiaCIsInZlcnNpb24iOiIxMS4yLjQuMCJ9..SvVopI55JaKHplU4YvXCKA.4i5XT9l4Ac4Q7M7j3hjLig.wcAFzkz4959-zThegioCLw</ldap:credentials>
+        <ldap:authenticationMeth>simple</ldap:authenticationMeth>
+        <ldap:description>HEBTDC01 - 10.53.22.72</ldap:description>
+        <ldap:name>HEBTDC01 - 10.53.22.72</ldap:name>
+        <ldap:binaryAttributes/>
+        <ldap:ldapHostTagList>
+            <ldap:tagEntry host="10.53.22.72" tags="HEBTDC01"/>
+        </ldap:ldapHostTagList>
+    </ldap:ldap-source>
+</ldap:ldap-sources>

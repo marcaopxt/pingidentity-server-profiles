@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:Clients xmlns:urn="urn:pingidentity.com:pf:oauth:client">
+    <urn:Client client_id="call_api" name="call_api" logo="" secret="BLO-ZCLyMcRfDIFtS-fvOYNmn7_gk_8TdmZkg_PtgVw.9R-Pcr9q.2" persistentGrantExpirationTime="0" enabled="true" lastModified="2023-05-24T17:14:29.435Z" creationTime="2023-05-24T17:02:51.837Z" bypassApprovalPage="true" restrictScopes="true" jwksUri="" jwks="" clientAuthnType="SECRET" enforceOneTimeJWT="false" isRequireSignedRequest="false">
+        <urn:Description>IRnd0pF0UdXSDyXmD46q93mPTWvgmDIkZ8EqFx4u6lA7aX9VkwAEST6tqw99Ko0q</urn:Description>
+        <urn:Grant type="client_credentials"/>
+        <urn:Grant type="authorization_code"/>
+        <urn:Grant type="urn:pingidentity.com:oauth2:grant_type:validate_bearer"/>
+        <urn:RedirectUri>https://httpbin.org/get</urn:RedirectUri>
+        <urn:RestrictedScope>openid</urn:RestrictedScope>
+        <urn:SupplementalInfo key="CREATION_TIME" value="1684947771837"/>
+        <urn:SupplementalInfo key="SECRET_CHANGED_TIME" value="1684947771"/>
+        <urn:SupplementalInfo key="DEVICE_FLOW_SETTING" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="DEFAULT_ATM_ID" value="hcorpjwt"/>
+        <urn:SupplementalInfo key="ALLOW_AUTHORIZATION_DETAIL_TYPES" value="false"/>
+        <urn:SupplementalInfo key="RESTRICT_RESPONSE_TYPES" value="false"/>
+        <urn:SupplementalInfo key="SECONDARY_SECRET_RETENTION_PERIOD_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="ACCESS_SESSION_MANAGEMENT_API" value="true"/>
+        <urn:SupplementalInfo key="ALLOW_EXCLUSIVE_SCOPES" value="false"/>
+        <urn:SupplementalInfo key="REFRESH_TOKEN_ROLLING_GRACE_PERIOD_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="PING_ACCESS_LOGOUT_CAPABLE" value="false"/>
+        <urn:SupplementalInfo key="ALLOW_AUTHENTICATION_API_INIT" value="true"/>
+        <urn:SupplementalInfo key="REQUIRE_PROOF_KEY_FOR_CODE_EXCHANGE" value="false"/>
+        <urn:SupplementalInfo key="SECONDARY_SECRETS" value="eyJzZWNyZXRzIjpbXX0="/>
+        <urn:SupplementalInfo key="RESTRICT_TO_DEFAULT_ATM" value="false"/>
+        <urn:SupplementalInfo key="ACCESS_SESSION_REVOCATION_API" value="true"/>
+        <urn:SupplementalInfo key="PERSISTENT_GRANT_IDLE_TIMEOUT_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="PERSISTENT_GRANT_REUSE_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="VALIDATE_USING_ALL_ELIGIBLE_ATMS" value="false"/>
+        <urn:SupplementalInfo key="ENABLED" value="true"/>
+        <urn:SupplementalInfo key="vnd.ping.policy_group_id" value="hcorp"/>
+    </urn:Client>
+</urn:Clients>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:AdapterConfiguration authnCtxClassRef="" isInheritAttributeSettings="false" isInheritAttributeMapping="false" maskOgnlValues="false" uniqueUserKeyField="subject" isInheritExtendedContractAttributes="false" name="idp_duo_security" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields>
+        <urn:Field name="Integration Key">DILMZ0V0MAUDUXZM5ZJX</urn:Field>
+        <urn:Field name="Secret Key">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoidnhOM3VQM1hiaCIsInZlcnNpb24iOiIxMS4yLjQuMCJ9..D2KsAbAj4BUNRqQZbGsu8g.H862moYfv0fDMZD26aEs9T6KyS34Fg2wkZ1VQMiE9Hi1SuGUwoTK64Z49QuytaoB.zBR2T13WMzMa4YvVzOSRCg</urn:Field>
+        <urn:Field name="API Host">api-9f22894f.duosecurity.com</urn:Field>
+        <urn:Field name="Failmode">secure</urn:Field>
+        <urn:Field name="Duo Health Check Endpoint">/oauth/v1/health_check</urn:Field>
+        <urn:Field name="Duo Authorization Endpoint">/oauth/v1/authorize</urn:Field>
+        <urn:Field name="Duo Access Token Endpoint">/oauth/v1/token</urn:Field>
+        <urn:Field name="API Request Timeout">5000</urn:Field>
+        <urn:Field name="Proxy Settings">System Defaults</urn:Field>
+        <urn:Field name="Custom Proxy Host"/>
+        <urn:Field name="Custom Proxy Port"/>
+    </urn:Fields>
+    <urn:AdvancedFields>
+        <urn:Field name="Duo Health Check Endpoint">/oauth/v1/health_check</urn:Field>
+        <urn:Field name="Duo Authorization Endpoint">/oauth/v1/authorize</urn:Field>
+        <urn:Field name="Duo Access Token Endpoint">/oauth/v1/token</urn:Field>
+        <urn:Field name="API Request Timeout">5000</urn:Field>
+        <urn:Field name="Proxy Settings">System Defaults</urn:Field>
+        <urn:Field name="Custom Proxy Host"/>
+        <urn:Field name="Custom Proxy Port"/>
+    </urn:AdvancedFields>
+    <urn:Tables>
+        <urn:Table name="Duo Response Mappings (optional)"/>
+    </urn:Tables>
+    <urn:ExtendedContractAttributes/>
+    <urn:ExtendedAttributesAdditionalProperties/>
+    <urn:UniqueKeyField>subject</urn:UniqueKeyField>
+    <urn:AttributeMapping>
+        <urn1:AttributeMap Name="subject" Type="Adapter" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:ValueText>subject</urn1:ValueText>
+        </urn1:AttributeMap>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:AttributeMapping>
+</urn:AdapterConfiguration>

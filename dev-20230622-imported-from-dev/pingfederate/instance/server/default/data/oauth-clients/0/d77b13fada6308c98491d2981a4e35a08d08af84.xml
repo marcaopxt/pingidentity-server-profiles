@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:Clients xmlns:urn="urn:pingidentity.com:pf:oauth:client">
+    <urn:Client client_id="salesforce" name="salesforce" logo="" secret="_Pfs-dHhRU1QnjSBNFRuRMz3girfSBgZ-nIdr9-IYFk.v7AnM4B3.2" persistentGrantExpirationTime="0" enabled="true" lastModified="2023-06-16T14:33:25.470Z" creationTime="2023-05-19T19:02:12.959Z" bypassApprovalPage="true" restrictScopes="true" jwksUri="" jwks="" clientAuthnType="SECRET" enforceOneTimeJWT="false" isRequireSignedRequest="false">
+        <urn:Description>3cr62bTbHzdGb5BqiaPqHuA0vTSAVSmBX2xAyMOe2B8JvzCkuv9YRNefvKVgio7J</urn:Description>
+        <urn:Grant type="refresh_token"/>
+        <urn:Grant type="authorization_code"/>
+        <urn:Grant type="urn:pingidentity.com:oauth2:grant_type:validate_bearer"/>
+        <urn:Grant type="urn:ietf:params:oauth:grant-type:token-exchange"/>
+        <urn:RedirectUri>https://httpbin.org/get</urn:RedirectUri>
+        <urn:RedirectUri>https://cec-claro--coesetup.sandbox.my.salesforce.com/services/authcallback/claro</urn:RedirectUri>
+        <urn:RedirectUri>http://localhost:8080/callback</urn:RedirectUri>
+        <urn:RedirectUri>https://openidconnect.net/callback</urn:RedirectUri>
+        <urn:RestrictedScope>email</urn:RestrictedScope>
+        <urn:RestrictedScope>openid</urn:RestrictedScope>
+        <urn:RestrictedScope>profile</urn:RestrictedScope>
+        <urn:SupplementalInfo key="CREATION_TIME" value="1684522932959"/>
+        <urn:SupplementalInfo key="SECRET_CHANGED_TIME" value="1685123903"/>
+        <urn:SupplementalInfo key="DEVICE_FLOW_SETTING" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="DEFAULT_ATM_ID" value="hcorpjwt"/>
+        <urn:SupplementalInfo key="ALLOW_AUTHORIZATION_DETAIL_TYPES" value="false"/>
+        <urn:SupplementalInfo key="RESTRICT_RESPONSE_TYPES" value="false"/>
+        <urn:SupplementalInfo key="SECONDARY_SECRET_RETENTION_PERIOD_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="ACCESS_SESSION_MANAGEMENT_API" value="true"/>
+        <urn:SupplementalInfo key="ALLOW_EXCLUSIVE_SCOPES" value="false"/>
+        <urn:SupplementalInfo key="REFRESH_TOKEN_ROLLING_GRACE_PERIOD_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="PING_ACCESS_LOGOUT_CAPABLE" value="false"/>
+        <urn:SupplementalInfo key="ALLOW_AUTHENTICATION_API_INIT" value="true"/>
+        <urn:SupplementalInfo key="REQUIRE_PROOF_KEY_FOR_CODE_EXCHANGE" value="false"/>
+        <urn:SupplementalInfo key="SECONDARY_SECRETS" value="eyJzZWNyZXRzIjpbXX0="/>
+        <urn:SupplementalInfo key="RESTRICT_TO_DEFAULT_ATM" value="true"/>
+        <urn:SupplementalInfo key="ACCESS_SESSION_REVOCATION_API" value="true"/>
+        <urn:SupplementalInfo key="PERSISTENT_GRANT_IDLE_TIMEOUT_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="PERSISTENT_GRANT_REUSE_TYPE" value="SERVER_DEFAULT"/>
+        <urn:SupplementalInfo key="VALIDATE_USING_ALL_ELIGIBLE_ATMS" value="false"/>
+        <urn:SupplementalInfo key="ENABLED" value="true"/>
+    </urn:Client>
+</urn:Clients>
