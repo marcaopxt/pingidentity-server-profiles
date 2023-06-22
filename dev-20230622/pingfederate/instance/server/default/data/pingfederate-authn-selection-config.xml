@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:AuthnSelectionConfig lastModifiedMillis="1687283927230" enableAuthnSelection="true" enableSpAuthnSelection="false" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
+    <urn:AuthnSelectionTrees>
+        <urn:AuthnSelectionTree treeId="xpeJMfpJ669dlJGUkRKRy7QeH" treeName="username" disabled="false" authnApiApp="" handleFailuresLocally="false">
+            <urn:AstRoot context="">
+                <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <urn:AuthnSourceKey type="ADAPTER">IDPUSERPASSHCORP</urn:AuthnSourceKey>
+                    <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+                    <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+                </urn:AstAction>
+                <urn:AstChild context="Fail">
+                    <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </urn:AstChild>
+                <urn:AstChild context="Success">
+                    <urn:AstAction apcId="kM5QHoUD54DssZkY" xsi:type="urn:ApcMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <urn:AttributeMapping>
+                            <urn1:AttributeMap Name="User.CPF__c" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>extensionAttribute3</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="User.FederationIdentifier" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>sAMAccountName</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="User.FirstName" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>givenName</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="User.ProfileId" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>extensionAttribute6</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="subject" Type="Adapter" AttributeSourceId="IDPUSERPASSHCORP" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>username</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="User.LastName" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>sn</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="User.UserName" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>sAMAccountName</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="User.Email__c" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>mail</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="User.NetServicos__c" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehnet" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>sAMAccountName</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="User.IsActive" Type="Text" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>1</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="User.LoginClaro__c" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehclaro" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>sAMAccountName</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="User.CompanyName" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>company</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="User.Embratel__c" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehebt" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>sAMAccountName</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeMap Name="User.Phone" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:ValueText>telephoneNumber</urn1:ValueText>
+                            </urn1:AttributeMap>
+                            <urn1:AttributeSource Id="spattributeprofilececsalesforcehcorp" Description="sp-attribute-profile-cec-salesforce-hcorp" Type="LDAP" DataSourceId="LDAP-0DB630962C05D3FADCC83D590EA320A431BB4D85" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:Parameter Name="filter" Value="samaccountname=${ad.IDPUSERPASSHCORP.username}"/>
+                                <urn1:Parameter Name="search_base" Value="OU=ServiceAccounts,OU=User Accounts,DC=hcorp,DC=local"/>
+                                <urn1:Parameter Name="search_attributes" Value="Subject DN,company,extensionAttribute3,extensionAttribute6,givenName,mail,sAMAccountName,sn,telephoneNumber"/>
+                                <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+                                <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+                            </urn1:AttributeSource>
+                            <urn1:AttributeSource Id="spattributeprofilececsalesforcehclaro" Description="sp-attribute-profile-cec-salesforce-hclaro" Type="LDAP" DataSourceId="LDAP-FCB654342DE49581B333D8D8109570E3718198CD" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:Parameter Name="filter" Value="extensionAttribute3=${ds.spattributeprofilececsalesforcehcorp.extensionAttribute3}"/>
+                                <urn1:Parameter Name="search_base" Value="CN=Users,DC=hclaro,DC=local"/>
+                                <urn1:Parameter Name="search_attributes" Value="Subject DN,sAMAccountName"/>
+                                <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+                                <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+                            </urn1:AttributeSource>
+                            <urn1:AttributeSource Id="spattributeprofilececsalesforcehebt" Description="sp-attribute-profile-cec-salesforce-hebt" Type="LDAP" DataSourceId="LDAP-298E28AD8E6159B0AF31AFB9F362270A7CB81C32" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:Parameter Name="filter" Value="extensionAttribute3=${ds.spattributeprofilececsalesforcehcorp.extensionAttribute3}"/>
+                                <urn1:Parameter Name="search_base" Value="CN=Users,DC=hebt,DC=local"/>
+                                <urn1:Parameter Name="search_attributes" Value="Subject DN,sAMAccountName"/>
+                                <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+                                <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+                            </urn1:AttributeSource>
+                            <urn1:AttributeSource Id="spattributeprofilececsalesforcehnet" Description="sp-attribute-profile-cec-salesforce-hnet" Type="LDAP" DataSourceId="LDAP-AE9AEB44809565007F80A96FC8618F2C6148E86A" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                <urn1:Parameter Name="filter" Value="extensionAttribute3=${ds.spattributeprofilececsalesforcehcorp.extensionAttribute3}"/>
+                                <urn1:Parameter Name="search_base" Value="CN=Users,DC=hnet,DC=local"/>
+                                <urn1:Parameter Name="search_attributes" Value="Subject DN,sAMAccountName"/>
+                                <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+                                <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+                            </urn1:AttributeSource>
+                            <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                        </urn:AttributeMapping>
+                    </urn:AstAction>
+                </urn:AstChild>
+            </urn:AstRoot>
+        </urn:AuthnSelectionTree>
+        <urn:AuthnSelectionTree treeId="HGISFiGyaa5S8YkAp3WDgH3sy" treeName="mfa" disabled="true" authnApiApp="" handleFailuresLocally="false">
+            <urn:AstRoot context="">
+                <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <urn:AuthnSourceKey type="ADAPTER">IDPUSERPASSHCORP</urn:AuthnSourceKey>
+                    <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+                    <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+                </urn:AstAction>
+                <urn:AstChild context="Fail">
+                    <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </urn:AstChild>
+                <urn:AstChild context="Success">
+                    <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <urn:AuthnSourceKey type="ADAPTER">idpduosecurity</urn:AuthnSourceKey>
+                        <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+                        <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+                    </urn:AstAction>
+                    <urn:AstChild context="Fail">
+                        <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </urn:AstChild>
+                    <urn:AstChild context="Success">
+                        <urn:AstAction apcId="kM5QHoUD54DssZkY" xsi:type="urn:ApcMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <urn:AttributeMapping>
+                                <urn1:AttributeMap Name="User.CPF__c" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>extensionAttribute3</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="User.FederationIdentifier" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>sAMAccountName</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="User.FirstName" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>givenName</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="User.ProfileId" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>extensionAttribute6</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="subject" Type="Adapter" AttributeSourceId="IDPUSERPASSHCORP" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>username</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="User.LastName" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>sn</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="User.UserName" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>sAMAccountName</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="User.Email__c" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>mail</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="User.NetServicos__c" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehnet" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>sAMAccountName</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="User.IsActive" Type="Text" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>1</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="User.LoginClaro__c" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehclaro" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>sAMAccountName</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="User.CompanyName" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>company</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="User.Embratel__c" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehebt" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>sAMAccountName</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeMap Name="User.Phone" Type="LDAP" AttributeSourceId="spattributeprofilececsalesforcehcorp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:ValueText>telephoneNumber</urn1:ValueText>
+                                </urn1:AttributeMap>
+                                <urn1:AttributeSource Id="spattributeprofilececsalesforcehcorp" Description="sp-attribute-profile-cec-salesforce-hcorp" Type="LDAP" DataSourceId="LDAP-0DB630962C05D3FADCC83D590EA320A431BB4D85" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:Parameter Name="filter" Value="samaccountname=${ad.IDPUSERPASSHCORP.username}"/>
+                                    <urn1:Parameter Name="search_base" Value="OU=ServiceAccounts,OU=User Accounts,DC=hcorp,DC=local"/>
+                                    <urn1:Parameter Name="search_attributes" Value="Subject DN,company,extensionAttribute3,extensionAttribute6,givenName,mail,sAMAccountName,sn,telephoneNumber"/>
+                                    <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+                                    <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+                                </urn1:AttributeSource>
+                                <urn1:AttributeSource Id="spattributeprofilececsalesforcehclaro" Description="sp-attribute-profile-cec-salesforce-hclaro" Type="LDAP" DataSourceId="LDAP-FCB654342DE49581B333D8D8109570E3718198CD" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:Parameter Name="filter" Value="extensionAttribute3=${ds.spattributeprofilececsalesforcehcorp.extensionAttribute3}"/>
+                                    <urn1:Parameter Name="search_base" Value="CN=Users,DC=hclaro,DC=local"/>
+                                    <urn1:Parameter Name="search_attributes" Value="Subject DN,sAMAccountName"/>
+                                    <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+                                    <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+                                </urn1:AttributeSource>
+                                <urn1:AttributeSource Id="spattributeprofilececsalesforcehebt" Description="sp-attribute-profile-cec-salesforce-hebt" Type="LDAP" DataSourceId="LDAP-298E28AD8E6159B0AF31AFB9F362270A7CB81C32" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:Parameter Name="filter" Value="extensionAttribute3=${ds.spattributeprofilececsalesforcehcorp.extensionAttribute3}"/>
+                                    <urn1:Parameter Name="search_base" Value="CN=Users,DC=hebt,DC=local"/>
+                                    <urn1:Parameter Name="search_attributes" Value="Subject DN,sAMAccountName"/>
+                                    <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+                                    <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+                                </urn1:AttributeSource>
+                                <urn1:AttributeSource Id="spattributeprofilececsalesforcehnet" Description="sp-attribute-profile-cec-salesforce-hnet" Type="LDAP" DataSourceId="LDAP-AE9AEB44809565007F80A96FC8618F2C6148E86A" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:Parameter Name="filter" Value="extensionAttribute3=${ds.spattributeprofilececsalesforcehcorp.extensionAttribute3}"/>
+                                    <urn1:Parameter Name="search_base" Value="CN=Users,DC=hnet,DC=local"/>
+                                    <urn1:Parameter Name="search_attributes" Value="Subject DN,sAMAccountName"/>
+                                    <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+                                    <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+                                </urn1:AttributeSource>
+                                <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                            </urn:AttributeMapping>
+                        </urn:AstAction>
+                    </urn:AstChild>
+                </urn:AstChild>
+            </urn:AstRoot>
+        </urn:AuthnSelectionTree>
+    </urn:AuthnSelectionTrees>
+    <urn:DefaultAuthnSources/>
+</urn:AuthnSelectionConfig>
