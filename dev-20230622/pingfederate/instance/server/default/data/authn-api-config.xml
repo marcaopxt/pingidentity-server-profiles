@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<authnApiConfig>
-    <apiApplications>
-        <application description="Authentication API Default" id="CwdKdDdVYNI3CBYGzscVsy5MN" name="Authentication API Default" url="https://k8s-default-ingressp-1e80972b5b-936591590.sa-east-1.elb.amazonaws.com"/>
-    </apiApplications>
-    <apiSettings apiEnabled="true" enableApiDescriptions="true" includeRequestContext="false" restrictAccessToRedirectlessMode="true"/>
-</authnApiConfig>
