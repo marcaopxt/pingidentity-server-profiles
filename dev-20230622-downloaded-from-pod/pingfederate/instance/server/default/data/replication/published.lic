@@ -1,0 +1,14 @@
+ID=00477324
+WSTrustSTS=true
+OAuth=true
+SaasProvisioning=true
+Product=PingFederate
+Version=11.2
+EnforcementType=3
+Tier=Free
+IssueDate=2023-05-03
+ExpirationDate=2024-05-01
+DeploymentMethod=Traditional
+Organization=Netbr Solutions Technology Corp
+SignCode=FF0F
+Signature=302C02144A3BD43294A41B7548EFA031F5B1DF842D73B13402143F115595A02C25A25FA7A7A3AB1A88C4F116EFEB

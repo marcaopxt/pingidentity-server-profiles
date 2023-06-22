@@ -1,0 +1,15 @@
+{
+  "configProfileId" : "UfDc3NJLMPcynDEyqKvICgGDO",
+  "configTimestamp" : "2023-06-22T20:05:32.579+00:00",
+  "coreArchiveInfo" : {
+    "fileName" : "core.data.zip",
+    "timestamp" : "2023-06-22T20:05:32.579+00:00",
+    "partial" : false
+  },
+  "baseArchiveInfo" : {
+    "fileName" : "base.delta.zip",
+    "timestamp" : "2023-06-22T20:05:32.579+00:00",
+    "partial" : false
+  },
+  "deltaArchiveInfos" : [ ]
+}
